@@ -1,0 +1,19 @@
+SELECT *
+FROM tutorial.aapl_historical_stock_price;
+
+SELECT COUNT(*)
+FROM tutorial.aapl_historical_stock_price;
+-- 3555
+
+SELECT COUNT(high)
+FROM tutorial.aapl_historical_stock_price;
+-- 3531  if column high is NULL, count(high) is 0
+-- So you can only use COUNT(column name) to get the non-null counts
+
+SELECT COUNT(date) AS count_of_date/"Count of Date"
+FROM tutorial.aapl_historical_stock_price
+-- renaming the column.  use lower case letters and underscores. OR
+-- use double quote to include spare
+
+
+
