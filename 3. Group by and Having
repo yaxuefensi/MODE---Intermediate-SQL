@@ -1,0 +1,12 @@
+1.
+SELECT year, month,COUNT(*) AS count
+FROM tutorial.aapl_historical_stock_price 
+GROUP BY year,month
+ORDER BY year,month;
+
+2. 
+SELECT year,month, MAX(high) AS high_price, MIN(low) AS low_price
+FROM tutorial.aapl_historical_stock_price 
+GROUP BY year,month
+ORDER BY year,month;
+
