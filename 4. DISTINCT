@@ -1,0 +1,3 @@
+SELECT DISTINCT year, month
+FROM tutorial.aapl_historical_stock_price
+--If you include two (or more) columns in a SELECT DISTINCT clause, your results will contain all of the unique pairs of those two columns
